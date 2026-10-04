@@ -164,8 +164,8 @@ export const ProgressView: React.FC<ProgressViewProps> = ({
                   </div>
                 ) : (
                   risk.topAtRiskTasks.map((item, idx) => {
-                    const taskId = item.taskId || item.task?.id || `task-${idx}`;
-                    const taskTitle = item.taskTitle || item.task?.title || (item as any).title || 'Untitled Task';
+                    const taskId = (item as any).taskId || item.task?.id || `task-${idx}`;
+                    const taskTitle = (item as any).taskTitle || item.task?.title || (item as any).title || 'Untitled Task';
                     return (
                       <div
                         key={taskId}
