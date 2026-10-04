@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Environment variables
+.env*
+!.env.example
+
+# Next.js & Build Outputs
+.next/
+.next-build/
+dist/
+build/
+out/
+
+# Database & Uploads
+pgdata/
+local_pgdata/
+uploads/
+*.log
+
+# Testing & Coverage
+coverage/
+.test-output*
+screenshots/
+
+# OS & IDE Files
+.DS_Store
+*.pem
+.vscode/
+.idea/
+
+__pycache__/
+*.pyc
+*.pyo
